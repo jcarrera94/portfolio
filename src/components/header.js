@@ -5,8 +5,10 @@ import headerStyles from './header.module.scss'
 
 const Header = () => {
   return (
-    <header>
-      <h1>Juan Carrera's Portfolio</h1>
+    <header className={headerStyles.header}>
+      <h1>
+        <Link className={headerStyles.title} to="/">JC Portfolio</Link>
+      </h1>
       <nav>
         <ul>
           <li><Link className={headerStyles.link} to="/">Home</Link></li>
