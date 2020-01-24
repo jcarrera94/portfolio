@@ -10,11 +10,11 @@ const Header = () => {
         <Link className={headerStyles.title} to="/">JC Portfolio</Link>
       </h1>
       <nav>
-        <ul>
-          <li><Link className={headerStyles.link} to="/">Home</Link></li>
-          <li><Link className={headerStyles.link} to="/about">About</Link></li>
-          <li><Link className={headerStyles.link} to="/blog">Blog</Link></li>
-          <li><Link className={headerStyles.link} to="/contact">Contact</Link></li>
+        <ul className={headerStyles.navList}>
+          <li><Link className={headerStyles.navItem} to="/">Home</Link></li>
+          <li><Link className={headerStyles.navItem} to="/about">About</Link></li>
+          <li><Link className={headerStyles.navItem} to="/blog">Blog</Link></li>
+          <li><Link className={headerStyles.navItem} to="/contact">Contact</Link></li>
         </ul>
       </nav>
     </header>
